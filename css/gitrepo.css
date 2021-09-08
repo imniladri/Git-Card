@@ -1,0 +1,374 @@
+/* **************************** Git Repo Styles **************************** */
+
+body {
+    background: var(--lightwhite);
+}
+
+header,
+header nav {
+    background: var(--bgDark);
+}
+
+::-webkit-scrollbar-thumb {
+    background: var(--bgDark);
+}
+
+section div.banner_gitrepo {
+    width: 100%;
+    height: 100%;
+    padding: 6rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* **************************** Search Repo **************************** */
+
+div.banner_gitrepo div.search_repo {
+    position: relative;
+    padding: 2rem;
+}
+
+div.banner_gitrepo div.search_repo h2 {
+    margin: 2rem 0;
+    font-size: 3rem;
+    font-weight: 600;
+    font-family: "Inter", sans-serif;
+    color: var(--darkblack);
+}
+
+div.banner_gitrepo div.search_repo form label {
+    display: block;
+    margin: 0.8rem 0;
+    font-size: 1.8rem;
+    font-weight: 700;
+    font-family: "Nunito", sans-serif;
+    color: var(--darkgrey);
+}
+
+div.banner_gitrepo div.search_repo form input.form-control {
+    margin: 0.8rem 0;
+    padding: 0.8rem 1rem;
+    font-size: 1.8rem;
+    font-weight: 600;
+    font-family: "Inter", sans-serif;
+    color: var(--lightblack);
+    background: transparent;
+    border: 2px solid var(--lightgrey);
+    letter-spacing: 1px;
+    border-radius: 4px;
+    box-shadow: none;
+    transition: all 0.2s ease;
+}
+
+div.banner_gitrepo div.search_repo form input.form-control:focus {
+    border: 2px solid var(--darkblack);
+}
+
+div.banner_gitrepo div.search_repo button.btn-get {
+    margin: 1rem 0;
+    padding: 0.8rem 2.2rem;
+    font-size: 1.8rem;
+    font-weight: 700;
+    font-family: "Cabin", sans-serif;
+    color: var(--darkwhite);
+    background: var(--lightblack);
+    border-radius: 4px;
+    letter-spacing: 1px;
+    transition: all 0.2s ease;
+}
+
+div.banner_gitrepo div.search_repo button.btn-get:hover {
+    background: var(--darkblack);
+}
+
+/* **************************** Git Card Container **************************** */
+
+div.banner_gitrepo div#git_repo {
+    position: relative;
+    padding: 4rem 6rem;
+}
+
+/* **************************** Git Card Skeleton **************************** */
+
+div.banner_gitrepo div.git_skeleton {
+    position: relative;
+    padding: 6rem 2rem;
+    width: 100%;
+    height: 100%;
+    background: var(--bgDark);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    border-radius: 6px;
+    opacity: 1;
+    visibility: visible;
+    transition: all 0.5s ease;
+}
+
+div.banner_gitrepo div.git_skeleton.hide {
+    opacity: 0;
+    visibility: hidden;
+}
+
+div.banner_gitrepo div.git_skeleton object {
+    margin: 1rem auto;
+    width: 15rem;
+    height: auto;
+}
+
+div.banner_gitrepo div.git_skeleton h2 {
+    margin: 1rem auto;
+    font-size: 4rem;
+    font-weight: 600;
+    font-family: "Cabin", sans-serif;
+    color: var(--darkwhite);
+    letter-spacing: 0.5px;
+    text-align: center;
+}
+
+/* **************************** Git Repo Opengraph **************************** */
+
+div.banner_gitrepo div.git_repo {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    background: var(--darkwhite);
+    border-radius: 6px;
+    box-shadow: 0 0 2px rgba(0, 0, 0, 0.1);
+    transition: all 0.3s ease;
+}
+
+/* ============= Repo Name ============= */
+
+div.banner_gitrepo div.git_repo .repo_name {
+    padding: 2rem 6rem 0.5rem;
+    display: flex;
+    justify-content: space-between;
+    align-content: flex-start;
+    align-items: flex-start;
+}
+
+div.banner_gitrepo div.git_repo .repo_name h4 {
+    margin: 2rem 0;
+    font-size: 4.5rem;
+    font-weight: 500;
+    font-family: "Inter", sans-serif;
+    color: var(--darkblack);
+    text-align: left;
+}
+
+div.banner_gitrepo div.git_repo .repo_name h4 span {
+    display: block;
+    font-size: 5rem;
+    font-weight: 700;
+    transition: all 0.1s ease;
+}
+
+div.banner_gitrepo div.git_repo .repo_name h4 span:hover {
+    color: rgba(255, 38, 38, 1);
+}
+
+div.banner_gitrepo div.git_repo .repo_name p {
+    margin: 1rem 0;
+    font-size: 2.2rem;
+    font-weight: 500;
+    font-family: "Cabin", sans-serif;
+    color: var(--darkgrey);
+    letter-spacing: 0.5px;
+    text-align: left;
+}
+
+div.banner_gitrepo div.git_repo .repo_name a {
+    text-decoration: none;
+}
+
+div.banner_gitrepo div.git_repo .repo_name img {
+    margin: 0;
+    width: 15rem;
+    height: auto;
+    border-radius: 50%;
+}
+
+/* ============= Repo Desc ============= */
+
+div.banner_gitrepo div.git_repo .repo_desc {
+    padding: 0.5rem 6rem;
+    display: flex;
+    justify-content: space-between;
+    align-content: flex-end;
+    align-items: center;
+}
+
+div.banner_gitrepo div.git_repo .repo_desc span.git_logo {
+    font-size: 4rem;
+    color: var(--darkgrey);
+}
+
+div.banner_gitrepo div.git_repo .repo_desc .repo_info {
+    margin: 2rem 0;
+    display: flex;
+    justify-content: flex-start;
+    align-content: center;
+    align-items: center;
+}
+
+div.banner_gitrepo div.git_repo .repo_desc .repo_info .info {
+    margin-right: 4rem;
+    display: flex;
+    justify-content: center;
+    align-content: flex-start;
+    align-items: flex-start;
+}
+
+div.banner_gitrepo div.git_repo .repo_desc .repo_info .info i {
+    margin-right: 0.5rem;
+    font-size: 2.5rem;
+    color: var(--darkgrey);
+}
+
+div.banner_gitrepo div.git_repo .repo_desc .repo_info .info h6 {
+    margin-left: 0.5rem;
+    font-size: 2rem;
+    font-weight: 600;
+    font-family: "Inter", sans-serif;
+    color: var(--darkblack);
+}
+
+div.banner_gitrepo div.git_repo .repo_desc .repo_info .info h6 span {
+    display: block;
+    margin: 0.2rem 0;
+    font-size: 2.2rem;
+    font-weight: 600;
+    font-family: "Nunito", sans-serif;
+    color: var(--darkgrey);
+    letter-spacing: 0.5px;
+}
+
+/* ============= Repo Break ============= */
+
+div.banner_gitrepo div.git_repo .repo_break {
+    padding: 0.5rem 0 0;
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    align-items: center;
+}
+
+div.banner_gitrepo div.git_repo .repo_break span {
+    width: 100%;
+    height: 2rem;
+}
+
+div.banner_gitrepo div.git_repo .repo_break span:nth-child(1) {
+    width: 50%;
+    background: #63468f;
+}
+div.banner_gitrepo div.git_repo .repo_break span:nth-child(2) {
+    width: 30%;
+    background: #ff613a;
+}
+div.banner_gitrepo div.git_repo .repo_break span:nth-child(3) {
+    width: 20%;
+    background: #f1e05a;
+}
+
+/* **************************** Responsive Media **************************** */
+
+@media (max-width: 1240px) {
+    section div.banner_gitrepo {
+        padding: 6rem 2rem;
+    }
+    div.banner_gitrepo div#git_repo {
+        padding: 4rem 0;
+    }
+
+    div.banner_gitrepo div.git_skeleton object {
+        width: 15vw;
+    }
+    div.banner_gitrepo div.git_skeleton h2 {
+        font-size: 4vw;
+    }
+
+    div.banner_gitrepo div.git_repo .repo_name,
+    div.banner_gitrepo div.git_repo .repo_desc {
+        padding-left: 4rem;
+        padding-right: 4rem;
+    }
+
+    div.banner_gitrepo div.git_repo .repo_name h4 {
+        font-size: 4.5vw;
+    }
+    div.banner_gitrepo div.git_repo .repo_name h4 span {
+        font-size: 5vw;
+    }
+    div.banner_gitrepo div.git_repo .repo_name img {
+        width: 15vw;
+    }
+}
+
+@media (max-width: 768px) {
+    div.banner_gitrepo div.git_repo .repo_name h4 {
+        margin-bottom: 1rem;
+    }
+    div.banner_gitrepo div.git_repo .repo_name p {
+        margin: 0.5rem 0;
+        font-size: 2vw;
+    }
+
+    div.banner_gitrepo div.git_repo .repo_desc .repo_info {
+        margin: 1rem 0;
+    }
+    div.banner_gitrepo div.git_repo .repo_desc .repo_info .info {
+        margin-right: 1rem;
+    }
+
+    div.banner_gitrepo div.git_repo .repo_desc span.git_logo,
+    div.banner_gitrepo div.git_repo .repo_desc .repo_info .info i {
+        font-size: 5vw;
+    }
+
+    div.banner_gitrepo div.git_repo .repo_desc .repo_info .info h6 {
+        font-size: 3vw;
+    }
+    div.banner_gitrepo div.git_repo .repo_desc .repo_info .info h6 span {
+        font-size: 2.5vw;
+    }
+}
+
+@media (max-width: 576px) {
+    div.banner_gitrepo div.git_skeleton {
+        padding: 4rem 2rem;
+    }
+    div.banner_gitrepo div.git_skeleton object {
+        margin: -2rem auto 0;
+        width: 16vw;
+    }
+    div.banner_gitrepo div.git_skeleton h2 {
+        margin: 0.5rem auto;
+        font-size: 6vw;
+    }
+
+    div.banner_gitrepo div.git_repo .repo_name,
+    div.banner_gitrepo div.git_repo .repo_desc {
+        padding-left: 2rem;
+        padding-right: 2rem;
+        flex-wrap: wrap;
+    }
+
+    div.banner_gitrepo div.git_repo .repo_name p {
+        font-size: 3.5vw;
+    }
+
+    div.banner_gitrepo div.git_repo .repo_desc .repo_info {
+        flex-wrap: wrap;
+    }
+
+    div.banner_gitrepo div.git_repo .repo_desc .repo_info .info h6 {
+        font-size: 4vw;
+    }
+    div.banner_gitrepo div.git_repo .repo_desc .repo_info .info h6 span {
+        font-size: 3.5vw;
+    }
+}

@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <!-- Site Title & Favicon-->
+    <title>User | Git Card</title>
+    <link rel="shortcut icon" type="image/svg" href="./images/github.ico" />
+
+    <!-- Meta Viewport Set -->
+    <meta charset="UTF-8" />
+    <meta http-equiv="Content-Type" content="text/html" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <!-- Meta Author, Description, Keywords -->
+    <meta name="author" content="Niladri Mondal" />
+    <meta name="description" content="Welcome to Git Card" />
+    <meta name="keywords" content="Developer, Github, Card, Git, Repository" />
+
+    <!-- Icons -->
+    <link rel="stylesheet" href="https://unpkg.com/boxicons@2.0.9/css/boxicons.min.css" />
+
+    <!-- Tab Color -->
+    <meta name="theme-color" content="#22272e" />
+    <meta name="msapplication-navbutton-color" content="#22272e" />
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="./css/bootstrap.min.css" />
+    <link rel="stylesheet" href="./css/index.css" />
+    <link rel="stylesheet" href="./css/gituser.css" />
+
+    <!-- JS -->
+    <script defer src="./js/jquery-3.6.0.min.js"></script>
+    <script defer src="./js/sweetalert.min.js"></script>
+    <script defer src="./js/index.js"></script>
+    <script defer src="./js/gituser.js"></script>
+</head>
+
+<body>
+
+    <!-- Header Start -->
+    <header>
+        <a href="https://gitog.vercel.app/">
+            <img src="./images/github.ico" alt="Git Card Logo" />
+            <h4>Git Card</h4>
+        </a>
+
+        <span id="kebab_menu" class="bx bx-dots-vertical-rounded"></span>
+
+        <nav>
+            <a class="nav-link" href="./gituser.html">Git User</a>
+            <a class="nav-link" href="./gitrepo.html">Git Repo</a>
+        </nav>
+    </header>
+    <!-- Header End -->
+
+    <!-- Git User Banner Start -->
+    <section id="banner_gituser">
+        <div class="banner_gituser row">
+
+            <div class="search_user col-lg-4">
+                <h2>Git Profile</h2>
+                <form>
+                    <div class="my-4">
+                        <label for="user">User Name</label>
+                        <input type="text" id="user" name="User" class="form-control" />
+                    </div>
+
+                    <button type="submit" class="btn btn-get">Get User</button>
+                </form>
+            </div>
+
+            <div id="git_user" class="col-lg-8">
+                <div class="git_skeleton">
+                    <object data="./images/github.svg"></object>
+                    <h2>Github User Profile</h2>
+                </div>
+            </div>
+
+        </div>
+    </section>
+    <!-- Git User Banner End -->
+
+</body>
+
+</html>
