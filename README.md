@@ -12,6 +12,8 @@
 <h4>
     A awesome way to know facts about a user or repo in github.
     <br/><br/>
+    Here! User Profile Card & Repo Open Graph Card.
+    <br/><br/>
     <i>And, Please show some love :heart: by hitting the Star :star: </i>.<br/>
 </h4>
 
